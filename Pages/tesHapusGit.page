@@ -10,11 +10,12 @@
 				}
 			],
 			"Position": "Top",
+			"Target": "",
 			"_Name": "Tabs0",
 			"_Type": "Control.Type.Tabs"
 		}
 	],
 	"Target": "",
-	"_Name": "tesHapusGit",
+	"_Name": "tesHapusGits",
 	"_Type": "Page"
 }
