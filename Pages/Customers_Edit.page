@@ -1,0 +1,76 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SampleDemoApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/SampleDemoApp/Actions/Customers_UpdateEntity.action",
+				"Position": "right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Update Customer",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"AlternateInput": "None",
+							"Caption": "First Name",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Default",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{FirstName}",
+							"_Name": "FCFirstName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AlternateInput": "None",
+							"Caption": "Last Name",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Default",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{LastName}",
+							"_Name": "FCLastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Phone Number",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{PhoneNumber}",
+							"_Name": "FCPhone",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Email",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{EmailAddress}",
+							"_Name": "FCEmail",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Customers_Edit",
+	"_Type": "Page"
+}
