@@ -43,6 +43,15 @@
 				"Visible": true,
 				"_Name": "UploadToolbarItem",
 				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Caption": "Upload Logs",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/SampleDemoApp/Actions/LogUpload.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
 			}
 		]
 	},

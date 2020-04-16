@@ -1,0 +1,15 @@
+{
+	"OnFailure": "/SampleDemoApp/Actions/CreateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/SampleDemoApp/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"DateOfBirth": "#Control:FormCellDatePicker0/#Value",
+		"EmailAddress": "#Control:FCCreateEmail/#Value",
+		"FirstName": "#Control:FCCreateFirstName/#Value",
+		"LastName": "#Control:FCCreateLastName/#Value"
+	},
+	"Target": {
+		"EntitySet": "Customers",
+		"Service": "/SampleDemoApp/Services/SampleServiceV2.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

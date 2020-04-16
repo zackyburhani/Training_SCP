@@ -7,6 +7,13 @@
 				"SystemItem": "Edit",
 				"Text": "Item",
 				"Visible": true
+			},
+			{
+				"OnPress": "/SampleDemoApp/Rules/Customers_DeleteConfirmation.js",
+				"Position": "right",
+				"SystemItem": "Trash",
+				"Text": "Item",
+				"Visible": true
 			}
 		]
 	},
@@ -66,6 +73,42 @@
 					"Visible": true,
 					"_Name": "SectionKeyValue1",
 					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"Caption": "No Customer Orders Found",
+						"FooterVisible": false
+					},
+					"Footer": {
+						"AccessoryType": "disclosureIndicator",
+						"AttributeLabel": "/SampleDemoApp/Rules/Customers_OrderCount.js",
+						"Caption": "See All",
+						"FooterStyle": "attribute",
+						"OnPress": "/SampleDemoApp/Actions/NavToCustomers_Orders.action",
+						"UseBottomPadding": false,
+						"Visible": true
+					},
+					"Header": {
+						"Caption": "Customer Orders",
+						"UseTopPadding": true
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/SampleDemoApp/Actions/NavToSalesOrders_Details.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"Subhead": "$(D,{CreatedAt})",
+						"SubstatusText": "{CurrencyCode}",
+						"Title": "{SalesOrderId}"
+					},
+					"Target": {
+						"EntitySet": "{{#Property:@odata.readLink}}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
+						"Service": "/SampleDemoApp/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
 				}
 			],
 			"Target": "",

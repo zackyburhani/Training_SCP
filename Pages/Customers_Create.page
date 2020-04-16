@@ -3,13 +3,13 @@
 		"Items": [
 			{
 				"OnPress": "/SampleDemoApp/Actions/CloseModalPage_Cancel.action",
-				"Position": "Left",
+				"Position": "left",
 				"SystemItem": "Cancel",
 				"Text": "Item",
 				"Visible": true
 			},
 			{
-				"OnPress": "/SampleDemoApp/Actions/Customers_UpdateEntity.action",
+				"OnPress": "/SampleDemoApp/Actions/Customers_CreateEntity.action",
 				"Position": "right",
 				"SystemItem": "Save",
 				"Text": "Item",
@@ -17,67 +17,62 @@
 			}
 		]
 	},
-	"Caption": "Update Customer",
+	"Caption": "Create Customer",
 	"Controls": [
 		{
 			"Sections": [
 				{
 					"Controls": [
 						{
-							"AlternateInput": "None",
 							"Caption": "First Name",
 							"IsEditable": true,
 							"IsVisible": true,
-							"KeyboardType": "Default",
-							"PlaceHolder": "PlaceHolder",
-							"Target": "",
-							"Value": "{FirstName}",
-							"_Name": "FCFirstName",
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateFirstName",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"AlternateInput": "None",
 							"Caption": "Last Name",
 							"IsEditable": true,
 							"IsVisible": true,
-							"KeyboardType": "Default",
-							"PlaceHolder": "PlaceHolder",
-							"Target": "",
-							"Value": "{LastName}",
-							"_Name": "FCLastName",
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateLastName",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "Phone Number",
+							"Caption": "Phone",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
-							"Target": "",
-							"Value": "{PhoneNumber}",
-							"_Name": "FCPhone",
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreatePhone",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Email",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
-							"Target": "",
-							"Value": "{EmailAddress}",
-							"_Name": "FCEmail",
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateEmail",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DOB",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FormCellDatePicker0",
+							"_Type": "Control.Type.FormCell.DatePicker"
 						}
 					],
-					"Target": "",
 					"Visible": true
 				}
 			],
-			"Target": "",
 			"_Name": "FormCellContainer0",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
 	"Target": "",
-	"_Name": "Customers_Edit",
+	"_Name": "Customers_Create",
 	"_Type": "Page"
 }

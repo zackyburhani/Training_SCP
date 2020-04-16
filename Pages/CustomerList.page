@@ -1,4 +1,15 @@
 {
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SampleDemoApp/Actions/NavToCustomers_Create.action",
+				"Position": "right",
+				"SystemItem": "Add",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
 	"Caption": "Customer",
 	"Controls": [
 		{

@@ -1,0 +1,13 @@
+{
+	"ActionResult": {
+		"_Name": "Delete"
+	},
+	"OnFailure": "/SampleDemoApp/Actions/DeleteCustomerEntityFailureMessage.action",
+	"OnSuccess": "/SampleDemoApp/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"EntitySet": "Customers",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SampleDemoApp/Services/SampleServiceV2.service"
+	},
+	"_Type": "Action.Type.ODataService.DeleteEntity"
+}
